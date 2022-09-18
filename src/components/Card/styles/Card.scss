@@ -1,0 +1,133 @@
+@import "../../colors.scss";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+img {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.card {
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    padding-inline: 2em;
+    img {
+      width: auto;
+      max-width: 20%;
+      max-height: 100%;
+      object-fit: contain;
+      margin-right: 1em;
+    }
+    .notification {
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .wrapper-span {
+          .user,
+          .target {
+            font-weight: 800;
+            &:hover {
+              color: $blue;
+              cursor: pointer;
+            }
+          }
+          .user {
+            color: $very-dark-blue;
+          }
+          .target {
+            color: $dark-grayish-blue;
+          }
+          .type-body {
+            color: $dark-grayish-blue;
+          }
+          #yes {
+            color: $blue;
+            font-weight: 800;
+          }
+        }
+        .unread {
+          margin-left: 0.5em;
+          border-radius: 50%;
+          display: inline-block;
+          min-width: 0.5em;
+          height: 0.5em;
+          background-color: $red;
+        }
+      }
+      .timeStamp {
+        color: $grayish-blue;
+        margin-top: 0.5rem;
+      }
+    }
+    .float {
+      margin-left: auto;
+      height: 100%;
+    }
+  }
+  .description {
+    border: 1px solid $grayish-blue;
+    margin-left: min(7.625em, 27%);
+    margin-right: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    color: $dark-grayish-blue;
+    margin-bottom: 1em;
+    &:hover {
+      background-color: $light-grayish-blue-1;
+      border-color: $light-grayish-blue-1;
+      cursor: pointer;
+    }
+  }
+}
+
+.bg-blue {
+  background-color: $very-light-grayish-blue;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 550px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  :root {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 280px) {
+  :root {
+    font-size: 6px;
+  }
+}
+@media screen and (max-width: 200px) {
+  :root {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 170px) {
+  :root {
+    font-size: 4px;
+  }
+}

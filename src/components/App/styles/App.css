@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: rgba(143, 31, 255, 0.242);
+}
+.body main {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1em;
+  margin-block: 2rem;
+  width: 90%;
+  max-width: 900px;
+  padding: 2em;
+}
+.body main header {
+  display: flex;
+  font-size: 2em;
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+  margin-bottom: 1em;
+}
+.body main header .counter {
+  display: inline-block;
+  border-radius: 0.3em;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  width: 2em;
+  margin-left: 1em;
+}
+.body main header button {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  font-size: 0.5em;
+  cursor: pointer;
+  color: hsl(219deg, 12%, 42%);
+}
+.body main header button:hover {
+  color: hsl(219deg, 85%, 26%);
+}/*# sourceMappingURL=App.css.map */
